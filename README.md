@@ -1,5 +1,7 @@
 # Red6785 Miscbrew
 
+A personal collection of un-notarized Homebrew Casks for applications I personally use.
+
 ## How do I install these formulae?
 
 `brew install red6785/miscbrew/<formula>`
