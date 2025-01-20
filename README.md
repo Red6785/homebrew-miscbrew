@@ -2,18 +2,19 @@
 
 A personal collection of un-notarized Homebrew Casks for applications I personally use.
 
-## How do I install these formulae?
+## How do I install these casks?
 
-`brew install red6785/miscbrew/<formula>`
+`brew install red6785/miscbrew/<cask>`
 
-Or `brew tap red6785/miscbrew` and then `brew install <formula>`.
+Or `brew tap red6785/miscbrew` and then `brew install <cask>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
 tap "red6785/miscbrew"
-brew "<formula>"
+brew "<cask>"
 ```
+Note that these will be blocked by Apple Gatekeeper, as they are not signed. To prevent this, you can add the flag `--no-quarantine` to the command.
 
 ## Documentation
 
