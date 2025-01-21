@@ -7,6 +7,13 @@ cask "ryujinx" do
   desc "Nintendo Switch emulator written in C#, originally created by gdkchan"
   homepage "https://github.com/Ryubing/Ryujinx"
 
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
+
+  depends_on macos: ">= :monterey"
+
   app "Ryujinx.app"
 
   zap trash: [
