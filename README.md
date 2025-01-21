@@ -14,7 +14,7 @@ Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`
 tap "red6785/miscbrew"
 brew "<cask>"
 ```
-Note that these will be blocked by Apple Gatekeeper, as they are not signed. To prevent this, you can add the flag `--no-quarantine` to the command.
+Note that these will be blocked by Apple Gatekeeper, as they are not signed. To prevent this, you can add the option `--no-quarantine` to the command.
 
 ## Documentation
 
