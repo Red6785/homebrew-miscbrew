@@ -20,7 +20,6 @@ cask "nicotine-plus" do
   zap trash: [
     "~/.config/nicotine",
     "~/Library/Preferences/org.nicotine_plus.Nicotine.plist",
-    "~/Library/Saved Application State/org.nicotine_plus.Nicotine.savedState"
+    "~/Library/Saved Application State/org.nicotine_plus.Nicotine.savedState",
   ]
-
 end
