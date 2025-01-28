@@ -1,7 +1,7 @@
 cask "cemu-metal" do
   # Every single version in this fork is a pre-release, so ignore that error.
-  version "2.3.0"
-  sha256 "512b8bfb67c6395e61326610604f1def830890d4efc435abeff98683891bfbd0"
+  version "2.3.1"
+  sha256 "cccae10c9f3087d71b3830aaceba4ec120b57cebf9e8679b8efa69c1b9df8026"
 
   # This is a fork of the original project that adds in Metal as a graphics backend.
   url "https://github.com/SamoZ256/Cemu/releases/download/testing#{version}/Cemu_release.zip"
