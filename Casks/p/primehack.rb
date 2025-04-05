@@ -19,6 +19,6 @@ cask "primehack" do
 
   zap trash: [
     "~/Library/Application Support/Dolphin",
-    "~/Library/Preferences/org.dolphin-emu.dolphin.plist"
+    "~/Library/Preferences/org.dolphin-emu.dolphin.plist",
   ]
 end
