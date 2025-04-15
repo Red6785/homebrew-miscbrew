@@ -15,7 +15,7 @@ cask "ryujinx@canary" do
 
   depends_on macos: ">= :monterey"
 
-  app "Ryujinx.app"
+  app "RyujinxCanary.app"
 
   zap trash: [
     "/Library/Application Support/Ryujinx",
