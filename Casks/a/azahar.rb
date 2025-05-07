@@ -11,7 +11,7 @@ cask "azahar" do
   livecheck do
     url :url
     strategy :github_latest do |json|
-      json["tag_name"][/(\d+)/, 1]
+      json["tag_name"][/^(\d+(?:\.\d+)?)/, 1]
     end
   end
 
