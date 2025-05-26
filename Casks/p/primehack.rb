@@ -1,6 +1,6 @@
 cask "primehack" do
-  version "1.0.7a"
-  sha256 "9166f5ffdd85a39628fecd47531b52c4ca48f682e9beb96ef2fccf8189b53973"
+  version "1.0.8"
+  sha256 "f46999015644beae010f3b22bd061c4c37742e7c9f76c05089f2c08ab52d035b"
 
   url "https://github.com/shiiion/dolphin/releases/download/#{version}/MacOS-PrimeHack.Release.v#{version}.zip"
   name "primehack"
@@ -15,7 +15,7 @@ cask "primehack" do
 
   depends_on macos: ">= :catalina"
 
-  app "PrimeHack-sha[26beef4].app", target: "PrimeHack.app"
+  app "PrimeHack-#{version}.app", target: "PrimeHack.app"
 
   zap trash: [
     "~/Library/Application Support/Dolphin",
