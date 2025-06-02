@@ -18,7 +18,7 @@ cask "kenjinx" do
   app "Ryujinx.app", target: "KenjiNX.app"
 
   postflight do
-    system_command "/usr/bin/xattr", 
+    system_command "/usr/bin/xattr",
                    args: ["-d", "com.apple.quarantine", "/Applications/KenjiNX.app"],
                    sudo: false
   end
