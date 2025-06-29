@@ -27,7 +27,4 @@ cask "cemu-metal" do
     "~/Library/Saved Application State/info.cemu.Cemu.savedState",
   ]
 
-  caveats do
-    requires_rosetta
-  end
 end
