@@ -48,7 +48,7 @@ cask "logi-options+" do
   # see https://prosupport.logi.com/hc/en-us/articles/6046882446359
   # Slimmed down to only include base functionality and Smart Actions
   installer script: {
-    executable: "#{app_path}Contents/MacOS/logioptionsplus_installer",
+    executable: "#{app_path}/Contents/MacOS/logioptionsplus_installer",
     args:       [
       "--quiet",
       "--analytics", "no",
