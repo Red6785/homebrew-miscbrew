@@ -24,7 +24,7 @@ cask "logi-options+" do
     end
   end
   on_monterey :or_newer do
-    app_path = "Logi Options + Installer.app"
+    app_path = "Logi Options+ Installer.app"
     version "1.93.755983"
     sha256 :no_check
 
