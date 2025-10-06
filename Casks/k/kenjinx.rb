@@ -1,6 +1,6 @@
 cask "kenjinx" do
-  version "2.0.4"
-  sha256 "4523d74788c227917d00ede6956b38920ec542df365899d527db09f3b984e851"
+  version "2.0.5"
+  sha256 "2b3b8d0ed47666c9b26c9afcec08a3ff20040066924b9979dd471b30e0030df4"
 
   url "https://github.com/Kenji-NX/Releases/releases/download/#{version}/ryujinx-#{version}-macos_universal.app.tar.gz",
       verified: "github.com/Kenji-NX/Releases/"
