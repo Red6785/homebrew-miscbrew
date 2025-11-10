@@ -18,6 +18,11 @@ cask "cemu-metal" do
 
   app "Cemu_release.app", target: "Cemu.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/Cemu.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Cemu",
     "~/Library/Caches/Cemu",

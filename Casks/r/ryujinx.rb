@@ -16,6 +16,11 @@ cask "ryujinx" do
 
   app "Ryujinx.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/Ryujinx.app"]
+  end
+
   zap trash: [
     "/Library/Application Support/Ryujinx",
     "~/Library/Preferences/org.ryujinx.Ryujinx.plist",

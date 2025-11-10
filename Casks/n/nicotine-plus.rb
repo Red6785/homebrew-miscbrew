@@ -17,6 +17,11 @@ cask "nicotine-plus" do
 
   app "Nicotine+.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/Nicotine+.app"]
+  end
+
   zap trash: [
     "~/.config/nicotine",
     "~/Library/Preferences/org.nicotine_plus.Nicotine.plist",

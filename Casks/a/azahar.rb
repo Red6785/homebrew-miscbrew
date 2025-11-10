@@ -19,6 +19,11 @@ cask "azahar" do
 
   app "azahar-#{version}-macos-universal/Azahar.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/Azahar.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Azahar",
     "~/Library/Preferences/org.azahar-emu.azahar.plist",

@@ -8,13 +8,17 @@ cask "vencordinstaller" do
   desc "Installer for Discord client-side mod"
   homepage "https://vencord.dev/"
 
-  # Documentation: https://docs.brew.sh/Brew-Livecheck
   livecheck do
     url :url
     strategy :github_latest
   end
 
   app "VencordInstaller.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/VencordInstaller.app"]
+  end
 
   caveats do
     requires_rosetta

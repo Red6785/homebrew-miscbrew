@@ -16,6 +16,11 @@ cask "wiiudownloader" do
 
   app "WiiUDownloader.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/WiiUDownloader.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/WiiUDownloader",
     "~/Library/Preferences/com.Xpl0itU.WiiUDownloader.plist",

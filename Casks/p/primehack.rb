@@ -17,6 +17,11 @@ cask "primehack" do
 
   app "PrimeHack-#{version}.app", target: "PrimeHack.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", ".com.apple.quarantine", "/Applications/PrimeHack.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Dolphin",
     "~/Library/Preferences/org.dolphin-emu.dolphin.plist",
