@@ -21,7 +21,7 @@ cask "boringnotch" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-d", ".com.apple.quarantine", "/Applications/boringNotch.app"]
+                   args: ["-d", "com.apple.quarantine", "/Applications/boringNotch.app"]
   end
 
   zap trash: [
