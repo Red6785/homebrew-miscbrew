@@ -18,7 +18,7 @@ cask "wiiudownloader" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-d", ".com.apple.quarantine", "/Applications/WiiUDownloader.app"]
+                   args: ["-d", "com.apple.quarantine", "/Applications/WiiUDownloader.app"]
   end
 
   zap trash: [
