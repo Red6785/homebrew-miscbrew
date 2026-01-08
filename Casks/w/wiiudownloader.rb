@@ -1,6 +1,6 @@
 cask "wiiudownloader" do
-  version "2.68"
-  sha256 "e48aad51d90b28ab127384a69e73cd8019893478aadcc7a22bdc583664500acc"
+  version "2.69"
+  sha256 "a5694fcc06d147dcc9af1bcb8c4789bddab983cbdfa67d7bbc254f6a016fc5b5"
 
   url "https://github.com/Xpl0itU/WiiUDownloader/releases/download/v#{version}/WiiUDownloader-macOS-Universal.dmg"
   name "WiiUDownloader"
@@ -12,7 +12,7 @@ cask "wiiudownloader" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :sequoia"
 
   app "WiiUDownloader.app"
 
@@ -26,8 +26,4 @@ cask "wiiudownloader" do
     "~/Library/Preferences/com.Xpl0itU.WiiUDownloader.plist",
     "~/Library/Saved Application State/com.Xpl0itU.WiiUDownloader.savedState",
   ]
-
-  caveats do
-    requires_rosetta
-  end
 end
