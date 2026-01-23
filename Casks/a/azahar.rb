@@ -21,7 +21,7 @@ cask "azahar" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-d", ".com.apple.quarantine", "/Applications/Azahar.app"]
+                   args: ["-d", "com.apple.quarantine", "/Applications/Azahar.app"]
   end
 
   zap trash: [
