@@ -20,7 +20,7 @@ cask "cemu-metal" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-d", ".com.apple.quarantine", "/Applications/Cemu.app"]
+                   args: ["-d", "com.apple.quarantine", "/Applications/Cemu.app"]
   end
 
   zap trash: [
