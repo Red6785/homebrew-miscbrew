@@ -1,6 +1,6 @@
 cask "wiiudownloader" do
-  version "2.81"
-  sha256 "814189b4b390dddc4f09f6e993904d96079369cbf6d019e3f846f9230b703d12"
+  version "2.84"
+  sha256 "fd1c8a835ecc22c773f0501acb1b368e7c3356497bfc66c6beaab932a1c11857"
 
   url "https://github.com/Xpl0itU/WiiUDownloader/releases/download/v#{version}/WiiUDownloader-macOS-Universal.dmg"
   name "WiiUDownloader"
